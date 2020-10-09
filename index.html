@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <title>Speech Engine</title>
+    </head>
+
+    <body class="container mx-auto px-4 text-center">
+
+        <div 
+            class="border border-purple-400 m-4 p-3 rounded text-left" 
+            contenteditable
+            oninput="setText(event)"
+        >
+            Digite seu texto aqui
+        </div>
+
+        <button
+            class="p-4 m-2 w-32 text-lg font-medium bg-purple-300 rounded shadow" 
+            onclick="speak()">Falar</button>
+
+        <button 
+            class="p-4 m-2 w-32 text-lg font-medium bg-purple-700 text-white rounded shadow" 
+            onclick="cancel()">Parar</button>
+        
+        <script src="./scripts.js"></script>
+    </body>
+</html>
